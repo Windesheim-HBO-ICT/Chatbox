@@ -30,11 +30,15 @@ public class MyApplication ... implements ChatClient {
         this.connector.start();    
     }
     
-    public void SendMessage(String message) {
+    // Some method that is called when the user clicks a Send button or presses Enter
+    public void ...(...) {
         ...
+        
+        // Send the message to the server
         connector.SendMessage(message);
     }
     
+    // Method that handles incoming messages from the server.
     public void MessageReceived(String message) {
         ...
     }
